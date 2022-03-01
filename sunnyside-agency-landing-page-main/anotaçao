@@ -1,0 +1,79 @@
+let carrinho = document.getElementById("Carrinho");
+
+carrinho.addEventListener("click", () => {
+  const show = document.querySelector(".carrinhodecompras");
+
+  if (show.style.display === "block") {
+    show.style.display = "none";
+  } else {
+    show.style.display = "block";
+  }
+});
+
+<html>
+
+ <div id="Carrinho"><img src="./images/icon-cart.svg" alt="" />
+          
+            <div class="carrinhodecompras">
+              <h3>Cart</h3>
+                <ul class="lista-itens">
+
+                  <li> Your cart is empty</li>
+                </ul>
+                <div class="flex-botao">
+                <input id="check" type="button" value="Checkout">
+              </div>
+            </div>
+
+</html>
+
+
+css 
+
+
+
+.carrinhodecompras{
+
+    display: none;
+    background-color: rgb(0, 0, 0);
+   
+    width: 400px;
+  
+    position: absolute;
+    right: 7%;
+    top: 12%;
+  }
+  .carrinhodecompras h3{
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-bottom:1px solid rgb(255, 255, 255) ;
+  }
+  
+  .carrinhodecompras li{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+  
+  .flex-botao{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carrinhodecompras input{
+  
+  width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: hsl(26, 100%, 55%);
+    border: none;
+  
+  margin-bottom: 20px;
+    color: white;
+  
+  }
+
+  
+  
